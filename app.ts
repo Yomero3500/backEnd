@@ -4,7 +4,7 @@ import { Server as WebSocketServer, WebSocket } from 'ws';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-import authRoutes from '../src/routes/auth.routes';
+import authRoutes from './routes/auth.routes';
 import { sseRouter, notifySSEClients } from './controllers/SSE';
 
 const app: Application = express();
